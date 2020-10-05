@@ -1,0 +1,20 @@
+-------------------------------------------------------------------------------
+Test set: example.SeleniumTest
+-------------------------------------------------------------------------------
+Tests run: 2, Failures: 2, Errors: 0, Skipped: 0, Time elapsed: 0.501 sec <<< FAILURE!
+testMethod(example.SeleniumTest)  Time elapsed: 0.066 sec  <<< FAILURE!
+java.lang.IllegalStateException: The driver executable does not exist: C:\Users\markova\OneDrive\Рабочий стол\chromedriver\chromedriver.exe
+	at com.google.common.base.Preconditions.checkState(Preconditions.java:585)
+	at org.openqa.selenium.remote.service.DriverService.checkExecutable(DriverService.java:146)
+	at org.openqa.selenium.remote.service.DriverService.findExecutable(DriverService.java:141)
+	at org.openqa.selenium.chrome.ChromeDriverService.access$000(ChromeDriverService.java:35)
+	at org.openqa.selenium.chrome.ChromeDriverService$Builder.findDefaultExecutable(ChromeDriverService.java:159)
+	at org.openqa.selenium.remote.service.DriverService$Builder.build(DriverService.java:355)
+	at org.openqa.selenium.chrome.ChromeDriverService.createDefaultService(ChromeDriverService.java:94)
+	at org.openqa.selenium.chrome.ChromeDriver.<init>(ChromeDriver.java:123)
+	at example.SeleniumTest.testMethod(SeleniumTest.java:18)
+
+afterMethod(example.SeleniumTest)  Time elapsed: 0.067 sec  <<< FAILURE!
+java.lang.NullPointerException
+	at example.SeleniumTest.afterMethod(SeleniumTest.java:29)
+
